@@ -16,7 +16,7 @@ public class TeamAction extends AbstractBaseAction{
 	@Resource
 	private ITeamService teamService;
 	
-	@RequestMapping("add")
+	@RequestMapping("add") 
 	public ModelAndView add(HttpServletRequest request,Team vo){
 		ModelAndView mav = new ModelAndView(super.getUrl("team.add.page"));
 		if(this.teamService.add(vo)){
