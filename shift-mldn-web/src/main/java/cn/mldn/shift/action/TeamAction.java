@@ -24,6 +24,6 @@ public class TeamAction extends AbstractBaseAction{
 		}else {
 			super.setUrlAndMsg(request, "team.add.action", "vo.add.failure","小组");
 		}
-		return mav;
+		return mav; 
 	}
 }
