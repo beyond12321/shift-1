@@ -34,7 +34,7 @@ public class EmpAction extends AbstractBaseAction {
 
 	@RequestMapping("add")
 	public ModelAndView add(HttpServletRequest request, Emp vo, MultipartFile pic) {
-		ModelAndView mav = new ModelAndView(super.getUrl("forward.page"));
+		ModelAndView mav = new ModelAndView(super.getUrl("forward.page")); 
 		
 		try {
 			String[] result = FastDFSUploadFile.fileUpload(request, pic);
