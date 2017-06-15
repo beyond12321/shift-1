@@ -8,6 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import cn.mldn.api.IEmpService;
+import cn.mldn.api.ITestService;
 import cn.mldn.vo.Emp;
 import junit.framework.TestCase;
 
@@ -43,21 +44,16 @@ public class IEmpServiceTest {
 		Emp vo = new Emp();
 		vo.setName("hello");
 		vo.setTeamId(1l);
-		TestCase.assertTrue(empService.add(vo, true)); 
+		TestCase.assertTrue(empService.add(vo, false)); 
 	}
 	
 	@Test
 	public void testList() {
-		System.err.println(empService.list("name", "z", 1L, 5)); 
-		try {
-			Thread.sleep(10000); 
-		} catch (InterruptedException e) {
-			e.printStackTrace(); 
-		}
+		System.err.println(empService.list("name", "z", 1L, 5));  
 	}
 	
 	@Test
 	public void testDelete() {
 		System.out.println(empService.delete(3123456767893l));
-	}
+	} 
 }

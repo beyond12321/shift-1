@@ -19,5 +19,7 @@
 	<dubbo:monitor protocol="registry" />
 	<dubbo:reference id="empServiceAPI" interface="cn.mldn.api.IEmpService" 
 		version="${dubbo.version}" /> 
+	<dubbo:reference id="testServiceAPI" interface="cn.mldn.api.ITeamService" 
+		version="${dubbo.version}" />  
 </beans>
  

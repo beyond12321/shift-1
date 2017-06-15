@@ -25,7 +25,7 @@ $(function(){
 		},
 		errorClass : "text-danger",
 		rules : {
-			"eid" : {
+			"id" : {
 				required : true
 				//remote : {
 //				url : "check.jsp", // 后台处理程序
@@ -44,28 +44,34 @@ $(function(){
 //				}
 //}
 			} ,
-			"password" : {
+			"name" : {
 				required : true
-			},
-			"ename" : {
+			} ,
+			"sex" : {
 				required : true
 			} ,
 			"phone" : {
 				required : true 
 			},
-			"jid" : {
+			"idCard" : {
 				required : true 
 			},
-			"did" : {
+			"birthday" : {
 				required : true 
 			},
-			"pic" : {
+			"hireDate" : {
+				required : true 
+			},
+			"educationDegree" : {
+				required : true 
+			},
+			"teamId" : {
+				required : true 
+			},
+			"avatar" : {
 				required : true ,
-				accept : ["jpg","png","gif","bmp"]
+				accept : ["jpg","png","gif","bmp"] 
 			},
-			"note" : {
-				required : true
-			}
 		}
 	});
 })

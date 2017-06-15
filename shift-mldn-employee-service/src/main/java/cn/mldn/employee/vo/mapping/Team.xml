@@ -22,4 +22,8 @@
 		from team
 		where id = #{id};
 	</select>
+	<insert id="doCreate" parameterType="Team">
+		insert into team(id, name, leader_id, create_id, last_update_user_id, create_time, update_time, team_id, last_update_no, state)
+			values(#{id},#{name},#{leaderId},#{createId},#{lastUpdateUserId},#{createTime},#{updateTime},#{teamId},#{lastUpdateNo},1)
+	</insert>
 </mapper>

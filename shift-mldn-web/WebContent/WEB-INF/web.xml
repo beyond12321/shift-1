@@ -3,8 +3,10 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	id="WebApp_ID" version="3.1">
+	 
 	<display-name>shift-mldn-web</display-name>
 	<!-- 配置要使用的Spring容器监听器 -->
+	
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
@@ -34,16 +36,16 @@
 
 	<!-- Spring中提供的编码过滤器，使用的编码都是UTF-8 -->
 	<filter>
-		<filter-name>encoding</filter-name>
+		<filter-name>encoding</filter-name> 
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-		<init-param>
-			<param-name>encoding</param-name>
-			<param-value>UTF-8</param-value>
-		</init-param>
-	</filter>
-	<filter-mapping>
-		<filter-name>encoding</filter-name>
-		<url-pattern>/*</url-pattern>
+		<init-param> 
+			<param-name>encoding</param-name> 
+			<param-value>UTF-8</param-value> 
+		</init-param> 
+	</filter> 
+	<filter-mapping> 
+		<filter-name>encoding</filter-name> 
+		<url-pattern>/*</url-pattern> 
 	</filter-mapping>
 	
 	<filter>
@@ -69,6 +71,7 @@
 		<exception-type>org.apache.shiro.authz.UnauthenticatedException</exception-type>
 		<location>/unauth.jsp</location>
 	</error-page>
+	
 	<error-page>
 		<exception-type>org.apache.shiro.authz.UnauthorizedException</exception-type>
 		<location>/unauth.jsp</location>

@@ -4,7 +4,15 @@
 <head>
 <title>Insert title here</title>
 </head>
+<%
+	String str = request.getParameter("flag");
+%>
+<h1><%=str == null%></h1>
+<h1><%=str%></h1>
 <body>
-	<h1>HEllo World!</h1>
+	<form action="NewFile.jsp" method="post">
+		设为组长: <input type="checkbox" name="flag" id="flag"> 
+		<input type="submit" id="subBut" name="subBut" value="提交">
+	</form>
 </body>
 </html>
