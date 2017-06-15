@@ -46,7 +46,7 @@ public class EmpAction extends AbstractBaseAction {
 			} else {
 				super.setUrlAndMsg(request, "emp.add.action", "vo.add.failure", FLAG);
 			} 
-		} catch (IOException | MyException e) {
+		} catch (IOException | MyException e) { 
 			e.printStackTrace();
 		}
 		return mav;
