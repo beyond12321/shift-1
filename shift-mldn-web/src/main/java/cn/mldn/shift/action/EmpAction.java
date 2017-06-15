@@ -32,7 +32,7 @@ public class EmpAction extends AbstractBaseAction {
 		return mav;
 	}
 
-	@RequestMapping("add")
+	@RequestMapping("add") 
 	public ModelAndView add(HttpServletRequest request, Emp vo, MultipartFile pic) {
 		ModelAndView mav = new ModelAndView(super.getUrl("forward.page")); 
 		
